@@ -14,6 +14,10 @@
         75,
         window.innerWidth / window.innerHeight
       );
+
+      const renderer = new THREE.WebGLRenderer(); // creates a renderer to display the 3D scene
+      renderer.setSize(window.innerWidth, window.innerHeight); // sets renderer size to fill the screen
+      document.body.appendChild(renderer.domElement); // adds the renderer's canvas to the webpage
     </script>
   </body>
 </html>
